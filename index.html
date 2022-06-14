@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,18 +18,18 @@
   </style>
 </head>
 <body>
-  <div class="w-[320px] h-[650px] mt-5 border-solid border-2 border-black mx-auto">
-    <img src="./images/logo.svg" alt="" class="w-[100px] mt-5 ml-5 ">
+  <div class="w-[320px] md:w-[100%] h-[650px] md:h-[52.5vw] mt-5 md:mt-[0px] border-solid border-2 border-black mx-auto">
+    <img src="./images/logo.svg" alt="" class="w-[100px] mt-5 md:ml-[100px] ml-5 ">
     
-    <img src="./images/hero-mobile.jpg" alt="" class="mt-[25px]">
+    <img id="hero" src="./images/hero-desktop.jpg" alt="" class="mt-[25px] md:-mt-[41px] md:h-[100%] md:float-right">
 
-    <div class="text-center">
+    <div class="text-center md:text-left md:ml-[100px] md:mt-[50px]">
       <p class="text-[#393031] text-[25px] tracking-[.2em] font-medium"> <span class="text-[#BC9E9F] font-extralight"> WE'RE </span><br> COMING <br> SOON</p>
-      <p class="text-[#BC9E9F] text-[13px] w-[290px] mx-auto mt-[10px]">Hello fellow shoppers! We're currently building our new fashion store. 
+      <p class="text-[#BC9E9F] text-[13px] w-[290px] mx-auto md:mx-[0px] mt-[10px]">Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <div class="flex">
-        <input type="text" placeholder="Email Address" class="w-[290px] h-[35px] pl-[5px] text-[#BC9E9F] py-[5px] border-solid border-[1px] border-[#BC9E9F] rounded-full bg-transparent mt-5 mx-auto">
-        <button class="bg-[#FFC0CB] z-10 absolute w-[50px] h-[35px] text-white rounded-full ml-[255px] mt-[20px]"> > </button>
+        <input id="emailInput" type="text" placeholder="Email Address" class="w-[290px] h-[35px] pl-[5px] text-[#BC9E9F] py-[5px] border-solid border-[1px] border-[#BC9E9F] rounded-full bg-transparent mt-5 mx-auto md:mx-[0px] ">
+        <button id="emailSubmit" class="bg-[#FFC0CB] z-10 absolute w-[50px] h-[35px] text-white rounded-full ml-[255px] mt-[20px] pb-[5px] font-bold"> > </button>
       </div>
     </div>
   </div>
