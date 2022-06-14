@@ -26,6 +26,7 @@ submit.addEventListener("click", function () {
   } else {
     error.classList.add("hidden");
     errorMessage.classList.add("hidden");
+    email.classList.remove("border-red-400");
     email.classList.add("border-[#BC9E9F]");
     email.value = "";
     alert("email sent");
